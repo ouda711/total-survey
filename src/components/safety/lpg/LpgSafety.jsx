@@ -13,7 +13,7 @@ const Question = styled.h6`
     font-weight: bold;
   `
 
-const LpgSafety = () => {
+const LpgSafety = (props) => {
   return (
       <Container>
           <Row>
@@ -23,19 +23,34 @@ const LpgSafety = () => {
                       <Form.Check
                           inline
                           label="Yes"
-                          name="group1"
+                          name="group3"
                           type="radio"
+                          value="YES"
                           id={`inline-checkbox-1`}
+                          onChange={props.lp}
                       />
                       <Form.Check
                           inline
                           label="No"
                           name="group1"
                           type="radio"
-                          id={`inline-checkbox-2`}
+                          value="No"
+                          id={`inline-checkbox-1`}
+                          onChange={props.lp}
+                      />
+                      <Form.Check
+                          inline
+                          label="N/A"
+                          name="group1"
+                          type="radio"
+                          value="N/A"
+                          id={`inline-checkbox-1`}
+                          onChange={props.lp}
                       />
                       <FloatingLabel controlId="floatingTextarea2" label="Comments">
                           <Form.Control
+                              value={props.lpc}
+                              onChange={props.lpcChange}
                               as="textarea"
                               placeholder="Leave a comment here"
                               style={{ height: '100px', marginTop: '0.5rem'}}

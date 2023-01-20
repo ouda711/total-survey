@@ -12,7 +12,7 @@ const Question = styled.h6`
     font-weight: bold;
   `
 
-const LicenceSafety = () => {
+const LicenceSafety = (props) => {
     return (
         <Container>
             <Row>
@@ -26,14 +26,27 @@ const LicenceSafety = () => {
                                 label="Yes"
                                 name="group1"
                                 type="radio"
+                                value="YES"
                                 id={`inline-checkbox-1`}
+                                onChange={props.p1}
                             />
                             <Form.Check
                                 inline
                                 label="No"
                                 name="group1"
                                 type="radio"
+                                value="NO"
                                 id={`inline-checkbox-2`}
+                                onChange={props.p1}
+                            />
+                            <Form.Check
+                                inline
+                                label="N/A"
+                                name="group2"
+                                type="radio"
+                                value="N/A"
+                                id={`inline-checkbox-3`}
+                                onChange={props.p2}
                             />
                         </div>
                         <div>
@@ -41,16 +54,29 @@ const LicenceSafety = () => {
                             <Form.Check
                                 inline
                                 label="Yes"
-                                name="group1"
+                                name="group2"
                                 type="radio"
+                                value="YES"
                                 id={`inline-checkbox-1`}
+                                onChange={props.p2}
                             />
                             <Form.Check
                                 inline
                                 label="No"
-                                name="group1"
+                                name="group2"
                                 type="radio"
+                                value="NO"
                                 id={`inline-checkbox-2`}
+                                onChange={props.p2}
+                            />
+                            <Form.Check
+                                inline
+                                label="N/A"
+                                name="group2"
+                                type="radio"
+                                value="N/A"
+                                id={`inline-checkbox-3`}
+                                onChange={props.p2}
                             />
                         </div>
                         <div>
@@ -58,16 +84,29 @@ const LicenceSafety = () => {
                             <Form.Check
                                 inline
                                 label="Yes"
-                                name="group1"
+                                name="group3"
                                 type="radio"
+                                value="YES"
                                 id={`inline-checkbox-1`}
+                                onChange={props.p3}
                             />
                             <Form.Check
                                 inline
                                 label="No"
-                                name="group1"
+                                name="group3"
                                 type="radio"
+                                value="NO"
                                 id={`inline-checkbox-2`}
+                                onChange={props.p3}
+                            />
+                            <Form.Check
+                                inline
+                                label="N/A"
+                                name="group3"
+                                type="radio"
+                                value="N/A"
+                                id={`inline-checkbox-3`}
+                                onChange={props.p3}
                             />
                         </div>
                         <div>
@@ -75,16 +114,29 @@ const LicenceSafety = () => {
                             <Form.Check
                                 inline
                                 label="Yes"
-                                name="group1"
+                                name="group4"
                                 type="radio"
+                                value="YES"
                                 id={`inline-checkbox-1`}
+                                onChange={props.p4}
                             />
                             <Form.Check
                                 inline
                                 label="No"
-                                name="group1"
+                                name="group4"
                                 type="radio"
+                                value="NO"
                                 id={`inline-checkbox-2`}
+                                onChange={props.p4}
+                            />
+                            <Form.Check
+                                inline
+                                label="N/A"
+                                name="group4"
+                                type="radio"
+                                value="N/A"
+                                id={`inline-checkbox-3`}
+                                onChange={props.p4}
                             />
                         </div>
                         <div>
@@ -92,20 +144,35 @@ const LicenceSafety = () => {
                             <Form.Check
                                 inline
                                 label="Yes"
-                                name="group1"
+                                name="group5"
                                 type="radio"
+                                value="YES"
                                 id={`inline-checkbox-1`}
+                                onChange={props.p5}
                             />
                             <Form.Check
                                 inline
                                 label="No"
-                                name="group1"
+                                name="group5"
                                 type="radio"
+                                value="NO"
                                 id={`inline-checkbox-2`}
+                                onChange={props.p5}
+                            />
+                            <Form.Check
+                                inline
+                                label="N/A"
+                                name="group5"
+                                type="radio"
+                                value="N/A"
+                                id={`inline-checkbox-3`}
+                                onChange={props.p5}
                             />
                         </div>
                         <FloatingLabel controlId="floatingTextarea2" label="Comments">
                             <Form.Control
+                                value={props.pc1}
+                                onChange={props.pc1Change}
                                 as="textarea"
                                 placeholder="Leave a comment here"
                                 style={{ height: '100px', marginTop: '0.5rem'}}

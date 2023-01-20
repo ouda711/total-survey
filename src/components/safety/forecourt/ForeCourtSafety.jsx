@@ -13,7 +13,7 @@ const Question = styled.h6`
     font-weight: bold;
   `
 
-const ForeCourtSafety = () => {
+const ForeCourtSafety = (props) => {
   return (
       <Container>
           <Row>
@@ -25,17 +25,32 @@ const ForeCourtSafety = () => {
                           label="Yes"
                           name="group1"
                           type="radio"
+                          value="YES"
                           id={`inline-checkbox-1`}
+                          onChange={props.f1}
                       />
                       <Form.Check
                           inline
                           label="No"
                           name="group1"
                           type="radio"
+                          value="NO"
                           id={`inline-checkbox-2`}
+                          onChange={props.f1}
+                      />
+                      <Form.Check
+                          inline
+                          label="N/A"
+                          name="group1"
+                          type="radio"
+                          value="N/A"
+                          id={`inline-checkbox-3`}
+                          onChange={props.f1}
                       />
                       <FloatingLabel controlId="floatingTextarea2" label="Comments">
                           <Form.Control
+                              value={props.c1}
+                              onChange={props.c1Change}
                               as="textarea"
                               placeholder="Leave a comment here"
                               style={{ height: '100px', marginTop: '0.5rem'}}
@@ -52,19 +67,34 @@ const ForeCourtSafety = () => {
                       <Form.Check
                           inline
                           label="Yes"
-                          name="group1"
+                          name="group2"
                           type="radio"
-                          id={`inline-checkbox-1`}
+                          value="YES"
+                          id={`inline-checkbox-4`}
+                          onChange={props.f2}
                       />
                       <Form.Check
                           inline
                           label="No"
-                          name="group1"
+                          name="group2"
                           type="radio"
-                          id={`inline-checkbox-2`}
+                          value="NO"
+                          id={`inline-checkbox-5`}
+                          onChange={props.f2}
+                      />
+                      <Form.Check
+                          inline
+                          label="N/A"
+                          name="group2"
+                          type="radio"
+                          value="N/A"
+                          id={`inline-checkbox-6`}
+                          onChange={props.f2}
                       />
                       <FloatingLabel controlId="floatingTextarea2" label="Comments">
                           <Form.Control
+                              value={props.c2}
+                              onChange={props.c2Change}
                               as="textarea"
                               placeholder="Leave a comment here"
                               style={{ height: '100px', marginTop: '0.5rem'}}
@@ -83,16 +113,29 @@ const ForeCourtSafety = () => {
                           <Form.Check
                               inline
                               label="Yes"
-                              name="group1"
+                              name="group3"
                               type="radio"
-                              id={`inline-checkbox-1`}
+                              value="YES"
+                              id={`inline-checkbox-7`}
+                              onChange={props.f31}
                           />
                           <Form.Check
                               inline
                               label="No"
-                              name="group1"
+                              name="group3"
                               type="radio"
-                              id={`inline-checkbox-2`}
+                              value="NO"
+                              id={`inline-checkbox-8`}
+                              onChange={props.f31}
+                          />
+                          <Form.Check
+                              inline
+                              label="N/A"
+                              name="group3"
+                              type="radio"
+                              value="N/A"
+                              id={`inline-checkbox-9`}
+                              onChange={props.f31}
                           />
                       </div>
                       <div>
@@ -100,16 +143,29 @@ const ForeCourtSafety = () => {
                           <Form.Check
                               inline
                               label="Yes"
-                              name="group1"
+                              name="group4"
                               type="radio"
-                              id={`inline-checkbox-1`}
+                              value="YES"
+                              id={`inline-checkbox-10`}
+                              onChange={props.f32}
                           />
                           <Form.Check
                               inline
                               label="No"
-                              name="group1"
+                              name="group4"
                               type="radio"
-                              id={`inline-checkbox-2`}
+                              value="NO"
+                              id={`inline-checkbox-11`}
+                              onChange={props.f32}
+                          />
+                          <Form.Check
+                              inline
+                              label="N/A"
+                              name="group4"
+                              type="radio"
+                              value="N/A"
+                              id={`inline-checkbox-12`}
+                              onChange={props.f32}
                           />
                       </div>
                       <div>
@@ -117,20 +173,35 @@ const ForeCourtSafety = () => {
                           <Form.Check
                               inline
                               label="Yes"
-                              name="group1"
+                              name="group5"
                               type="radio"
-                              id={`inline-checkbox-1`}
+                              value="YES"
+                              id={`inline-checkbox-13`}
+                              onChange={props.f33}
                           />
                           <Form.Check
                               inline
                               label="No"
-                              name="group1"
+                              name="group5"
                               type="radio"
-                              id={`inline-checkbox-2`}
+                              value="NO"
+                              id={`inline-checkbox-14`}
+                              onChange={props.f33}
+                          />
+                          <Form.Check
+                              inline
+                              label="N/A"
+                              name="group5"
+                              type="radio"
+                              value="N/A"
+                              id={`inline-checkbox-15`}
+                              onChange={props.f33}
                           />
                       </div>
                       <FloatingLabel controlId="floatingTextarea2" label="Comments">
                           <Form.Control
+                              value={props.c3}
+                              onChange={props.c3Change}
                               as="textarea"
                               placeholder="Leave a comment here"
                               style={{ height: '100px', marginTop: '0.5rem'}}
@@ -147,19 +218,34 @@ const ForeCourtSafety = () => {
                       <Form.Check
                           inline
                           label="Yes"
-                          name="group1"
+                          name="group6"
                           type="radio"
-                          id={`inline-checkbox-1`}
+                          value="YES"
+                          id={`inline-checkbox-16`}
+                          onChange={props.f4}
                       />
                       <Form.Check
                           inline
                           label="No"
-                          name="group1"
+                          name="group6"
                           type="radio"
-                          id={`inline-checkbox-2`}
+                          value="NO"
+                          id={`inline-checkbox-17`}
+                          onChange={props.f4}
+                      />
+                      <Form.Check
+                          inline
+                          label="N/A"
+                          name="group7"
+                          type="radio"
+                          value="N/A"
+                          id={`inline-checkbox-18`}
+                          onChange={props.f4}
                       />
                       <FloatingLabel controlId="floatingTextarea2" label="Comments">
                           <Form.Control
+                              value={props.c4}
+                              onChange={props.c4Change}
                               as="textarea"
                               placeholder="Leave a comment here"
                               style={{ height: '100px', marginTop: '0.5rem'}}
@@ -176,19 +262,34 @@ const ForeCourtSafety = () => {
                       <Form.Check
                           inline
                           label="Yes"
-                          name="group1"
+                          name="group8"
                           type="radio"
-                          id={`inline-checkbox-1`}
+                          value="YES"
+                          id={`inline-checkbox-19`}
+                          onChange={props.f5}
                       />
                       <Form.Check
                           inline
                           label="No"
-                          name="group1"
+                          name="group8"
                           type="radio"
-                          id={`inline-checkbox-2`}
+                          value="NO"
+                          id={`inline-checkbox-20`}
+                          onChange={props.f5}
+                      />
+                      <Form.Check
+                          inline
+                          label="N/A"
+                          name="group8"
+                          type="radio"
+                          value="N/A"
+                          id={`inline-checkbox-21`}
+                          onChange={props.f5}
                       />
                       <FloatingLabel controlId="floatingTextarea2" label="Comments">
                           <Form.Control
+                              value={props.c5}
+                              onChange={props.c5Change}
                               as="textarea"
                               placeholder="Leave a comment here"
                               style={{ height: '100px', marginTop: '0.5rem'}}
@@ -205,19 +306,34 @@ const ForeCourtSafety = () => {
                       <Form.Check
                           inline
                           label="Yes"
-                          name="group1"
+                          name="group9"
                           type="radio"
-                          id={`inline-checkbox-1`}
+                          value="YES"
+                          id={`inline-checkbox-22`}
+                          onChange={props.f6}
                       />
                       <Form.Check
                           inline
                           label="No"
-                          name="group1"
+                          name="group9"
                           type="radio"
-                          id={`inline-checkbox-2`}
+                          value="NO"
+                          id={`inline-checkbox-23`}
+                          onChange={props.f6}
+                      />
+                      <Form.Check
+                          inline
+                          label="N/A"
+                          name="group9"
+                          type="radio"
+                          value="N/A"
+                          id={`inline-checkbox-24`}
+                          onChange={props.f6}
                       />
                       <FloatingLabel controlId="floatingTextarea2" label="Comments">
                           <Form.Control
+                              value={props.c6}
+                              onChange={props.c6Change}
                               as="textarea"
                               placeholder="Leave a comment here"
                               style={{ height: '100px', marginTop: '0.5rem'}}

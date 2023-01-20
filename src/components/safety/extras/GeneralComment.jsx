@@ -12,18 +12,22 @@ const Question = styled.h6`
     font-weight: bold;
   `
 
-const GeneralComment = () => {
+const GeneralComment = (props) => {
     return (
         <Wrapper>
             <FloatingLabel controlId="floatingTextarea2" label="GENERAL OBSERVATIONS AND COMMENTS OF THE STATION INSPECTION						">
                 <Form.Control
+                    value={props.gm}
+                    onChange={props.gmChange}
                     as="textarea"
                     placeholder="Leave a comment here"
-                    style={{ height: '200px', marginTop: '0.5rem'}}
+                    style={{ height: '100px', marginTop: '0.5rem'}}
                 />
             </FloatingLabel>
         </Wrapper>
     )
 }
+
+
 
 export default GeneralComment

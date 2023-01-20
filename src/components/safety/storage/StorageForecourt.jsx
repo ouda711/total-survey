@@ -13,7 +13,7 @@ const Question = styled.h6`
     font-weight: bold;
   `
 
-const StorageForecourt = () => {
+const StorageForecourt = (props) => {
   return (
       <Container>
         <Row>
@@ -25,17 +25,32 @@ const StorageForecourt = () => {
                   label="Yes"
                   name="group1"
                   type="radio"
+                  value="YES"
                   id={`inline-checkbox-1`}
+                  onChange={props.s1}
               />
               <Form.Check
                   inline
                   label="No"
                   name="group1"
                   type="radio"
+                  value="NO"
                   id={`inline-checkbox-2`}
+                  onChange={props.s1}
+              />
+              <Form.Check
+                  inline
+                  label="N/A"
+                  name="group1"
+                  type="radio"
+                  value="N/A"
+                  id={`inline-checkbox-3`}
+                  onChange={props.s1}
               />
               <FloatingLabel controlId="floatingTextarea2" label="Comments">
                 <Form.Control
+                    value={props.sc1}
+                    onChange={props.sc1Change}
                     as="textarea"
                     placeholder="Leave a comment here"
                     style={{ height: '100px', marginTop: '0.5rem'}}
@@ -52,19 +67,34 @@ const StorageForecourt = () => {
               <Form.Check
                   inline
                   label="Yes"
-                  name="group1"
+                  name="group2"
                   type="radio"
-                  id={`inline-checkbox-1`}
+                  value="YES"
+                  id={`inline-checkbox-4`}
+                  onChange={props.s2}
               />
               <Form.Check
                   inline
                   label="No"
-                  name="group1"
+                  name="group2"
                   type="radio"
-                  id={`inline-checkbox-2`}
+                  value="NO"
+                  id={`inline-checkbox-5`}
+                  onChange={props.s2}
+              />
+              <Form.Check
+                  inline
+                  label="N/A"
+                  name="group2"
+                  type="radio"
+                  value="N/A"
+                  id={`inline-checkbox-6`}
+                  onChange={props.s2}
               />
               <FloatingLabel controlId="floatingTextarea2" label="Comments">
                 <Form.Control
+                    value={props.sc2}
+                    onChange={props.sc2Change}
                     as="textarea"
                     placeholder="Leave a comment here"
                     style={{ height: '100px', marginTop: '0.5rem'}}
@@ -81,19 +111,34 @@ const StorageForecourt = () => {
               <Form.Check
                   inline
                   label="Yes"
-                  name="group1"
+                  name="group3"
                   type="radio"
-                  id={`inline-checkbox-1`}
+                  value="YES"
+                  id={`inline-checkbox-7`}
+                  onChange={props.s3}
               />
               <Form.Check
                   inline
                   label="No"
-                  name="group1"
+                  name="group3"
                   type="radio"
-                  id={`inline-checkbox-2`}
+                  value="NO"
+                  id={`inline-checkbox-8`}
+                  onChange={props.s3}
+              />
+              <Form.Check
+                  inline
+                  label="N/A"
+                  name="group3"
+                  type="radio"
+                  value="N/A"
+                  id={`inline-checkbox-9`}
+                  onChange={props.s3}
               />
               <FloatingLabel controlId="floatingTextarea2" label="Comments">
                 <Form.Control
+                    value={props.sc3}
+                    onChange={props.sc3Change}
                     as="textarea"
                     placeholder="Leave a comment here"
                     style={{ height: '100px', marginTop: '0.5rem'}}
@@ -110,19 +155,34 @@ const StorageForecourt = () => {
               <Form.Check
                   inline
                   label="Yes"
-                  name="group1"
+                  name="group4"
                   type="radio"
+                  value="YES"
                   id={`inline-checkbox-1`}
+                  onChange={props.s4}
               />
               <Form.Check
                   inline
                   label="No"
-                  name="group1"
+                  name="group4"
                   type="radio"
+                  value="NO"
                   id={`inline-checkbox-2`}
+                  onChange={props.s4}
+              />
+              <Form.Check
+                  inline
+                  label="N/A"
+                  name="group4"
+                  type="radio"
+                  value="N/A"
+                  id={`inline-checkbox-3`}
+                  onChange={props.s4}
               />
               <FloatingLabel controlId="floatingTextarea2" label="Comments">
                 <Form.Control
+                    value={props.sc4}
+                    onChange={props.sc4Change}
                     as="textarea"
                     placeholder="Leave a comment here"
                     style={{ height: '100px', marginTop: '0.5rem'}}
@@ -139,19 +199,34 @@ const StorageForecourt = () => {
               <Form.Check
                   inline
                   label="Yes"
-                  name="group1"
+                  name="group5"
                   type="radio"
+                  value="YES"
                   id={`inline-checkbox-1`}
+                  onChange={props.s5}
               />
               <Form.Check
                   inline
                   label="No"
-                  name="group1"
+                  name="group5"
                   type="radio"
+                  value="NO"
                   id={`inline-checkbox-2`}
+                  onChange={props.s5}
+              />
+              <Form.Check
+                  inline
+                  label="N/A"
+                  name="group5"
+                  type="radio"
+                  value="N/A"
+                  id={`inline-checkbox-3`}
+                  onChange={props.s5}
               />
               <FloatingLabel controlId="floatingTextarea2" label="Comments">
                 <Form.Control
+                    value={props.sc5}
+                    onChange={props.sc5Change}
                     as="textarea"
                     placeholder="Leave a comment here"
                     style={{ height: '100px', marginTop: '0.5rem'}}
